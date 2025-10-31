@@ -83,7 +83,7 @@ export default function Footer() {
         <div className="max-md:w-full w-1/3 text-white gap-3 flex flex-col text-sm">
           <p className="font-bold leading-6">
             For any complaint or Assistance <br />
-            info@sultansdinebd.com
+            info@ullasshomesdine.com
           </p>
           <div className="flex flex-col justify-start">
             <h1 className="font-bold text-white text-lg">Download Our App</h1>
@@ -181,7 +181,7 @@ export default function Footer() {
           FAQ
         </Link>
       </div>
-      <div className="text-white">
+      <div className="text-white -mb-8">
         Copyright © 2025{" "}
         <Link
           href={"https://github.com/shresthashome"}
