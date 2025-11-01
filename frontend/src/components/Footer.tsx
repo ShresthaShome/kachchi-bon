@@ -10,13 +10,12 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import "@/app/globals.css";
 
 export default function Footer() {
   const pathname = usePathname();
 
   return (
-    <footer className="bg-orange-600 flex flex-col justify-between items-center gap-10 p-5 md:pl-30 container">
+    <footer className="bg-orange-600 flex flex-col justify-between items-center gap-10 p-5 md:pl-30 footer">
       <div className="flex max-md:flex-col justify-between gap-10 w-full md:px-10">
         <div className="max-md:w-full w-1/3 text-white gap-3 flex flex-col text-sm justify-center">
           <h1 className="font-bold text-white uppercase text-xl">Address</h1>

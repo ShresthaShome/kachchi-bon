@@ -44,13 +44,13 @@
 }
 
 /* globals.css */
-.container {
+.footer {
   position: relative;
   padding: 8px 8px 32px 8px;
   background: oklch(64.6% 0.222 41.116);
 }
 
-.container::after {
+.footer::after {
   background: linear-gradient(
       -45deg,
       oklch(64.6% 0.222 41.116) 16px,

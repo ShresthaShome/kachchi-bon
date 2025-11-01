@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import ScrollToTopButton from "@/components/ScrollToTopButton";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+// import ScrollToTopButton from "@/components/ScrollToTopButton";
+// import Navbar from "@/components/Navbar";
+// import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Kacchi Restaurant",
@@ -17,10 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="border-red-600 border-8 pt-28 max-lg:pt-37">
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
-        <Footer />
-        <ScrollToTopButton />
+        {/* <Footer /> */}
+        {/*<ScrollToTopButton /> */}
       </body>
     </html>
   );
