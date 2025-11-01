@@ -4,12 +4,47 @@ import { Handbag, Search, UserRound } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [scrolled, setScrolled] = useState(false);
+  const [lastScroll, setLastScroll] = useState(0);
+  const [hideNav, setHideNav] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+
+      setScrolled(currentScroll > 150);
+
+      if (currentScroll > lastScroll && currentScroll > 150) {
+        setHideNav(true);
+      } else {
+        setHideNav(false);
+      }
+
+      setLastScroll(currentScroll);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScroll]);
 
   return (
-    <nav className="flex flex-col lg:flex-row justify-around w-full min-h-30 gap-3 my-3 items-center">
+    <nav
+      className={`fixed mt-0 top-0 left-0 w-full z-500 transition-all duration-300 ${
+        !scrolled ? "bg-white/90 shadow-lg py-3" : "bg-white/50 py-5"
+      } ${
+        hideNav ? "-translate-y-full md:translate-y-0" : "translate-y-0"
+      } backdrop-blur-md flex flex-col lg:flex-row justify-around w-full min-h-30 gap-3 my-3 items-center`}
+    >
       <div className="flex max-lg:justify-evenly max-lg:w-full w-1/4 justify-around">
         <Link
           href="/"
