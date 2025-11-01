@@ -7,8 +7,8 @@
 5. [ ] Cart Page - Order all item show(name, qty, price), update/remove options, subtotal/total
 6. [ ] Checkout Page - Billing info, delivery info, payment method (Stripe, PayPal demo)।
 7. [ ] Order Status / My Orders Page - User তাদের Order track করতে পারবে (Pending / Processing / Delivered / Cancelled)
-8. [ ] Login / Register Page - Customer login/register UI (demo authentication flow)।
-9. [ ] User Profile Page - User info edit, saved addresses, order history, change password
+8. [x] Login / Register Page - Customer login/register UI (demo authentication flow)।
+9. [x] User Profile Page - User info edit, saved addresses, order history, change password
 10. [ ] Blog Page - Restaurant news, recipes, food tips
 11. [ ] Blog Details Page - Full post view with comments section
 12. [ ] Privacy Policy Page - Legal & data protection info
@@ -21,4 +21,4 @@
 19. [ ] Team Page - Chefs and staff members (name, role, experience, social links)
 20. [ ] Testimonials Page - Customer feedback section
 21. [ ] Search Results Page - Dish or blog post search results
-22. [ ] 404 Error Page - Custom design for not found page
+22. [x] 404 Error Page - Custom design for not found page
