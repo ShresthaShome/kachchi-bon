@@ -1,7 +1,7 @@
 # User Story
 
-1. [ ] Home Page - Hero Section (Restaurant intro), Featured Dishes, Special Offers, Chef Section, Testimonials, Reservation CTA
-2. [ ] Menu Page - All food categories (Breakfast / Lunch / Dinner / Drinks / Desserts), filters, price, add to cart button, image gallery
+1. [x] Home Page - Hero Section (Restaurant intro), Featured Dishes, Special Offers, Chef Section, Testimonials, Reservation CTA
+2. [x] Menu Page - All food categories (Breakfast / Lunch / Dinner / Drinks / Desserts), filters, price, add to cart button, image gallery
 3. [ ] About Us Page - Restaurant story, mission, chefs team section, awards, interior photos
 4. [ ] Contact Page - Contact form (Name, Email, Message), Google Map, address, phone, working hours
 5. [ ] Cart Page - Order all item show(name, qty, price), update/remove options, subtotal/total

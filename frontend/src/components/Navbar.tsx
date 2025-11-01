@@ -4,13 +4,14 @@ import { Handbag, Search, UserRound } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Navbar() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [lastScroll, setLastScroll] = useState(0);
   const [hideNav, setHideNav] = useState(false);
+  const lastScrollRef = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -22,24 +23,27 @@ export default function Navbar() {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
 
-      setScrolled(currentScroll > 150);
+      setScrolled(currentScroll > 0);
 
-      if (currentScroll > lastScroll && currentScroll > 150) {
+      if (currentScroll > lastScrollRef.current && currentScroll > 150) {
         setHideNav(true);
       } else {
         setHideNav(false);
       }
 
-      setLastScroll(currentScroll);
+      lastScrollRef.current = currentScroll; // ✅ update ref
     };
+
+    // Check initial scroll
+    handleScroll();
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScroll]);
+  }, []);
 
   return (
     <nav
-      className={`fixed mt-0 top-0 left-0 w-full z-500 transition-all duration-300 ${
+      className={`fixed mt-0 top-0 left-0 w-full z-500 transition-all duration-700 ${
         !scrolled ? "bg-white/90 shadow-lg py-3" : "bg-white/50 py-5"
       } ${
         hideNav ? "-translate-y-full md:translate-y-0" : "translate-y-0"

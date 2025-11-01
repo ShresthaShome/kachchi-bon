@@ -1,7 +1,10 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
+import { useRouter } from "next/navigation";
 
 export default function HeroSection() {
+  const router = useRouter();
+
   return (
     <section className="w-full flex max-md:flex-col">
       <Image
@@ -26,6 +29,7 @@ export default function HeroSection() {
         <Button
           className="uppercase hover:cursor-pointer rounded-full  text-orange-600 hover:text-white hover:bg-blue-900 hover:shadow-md transition-all border-0 px-5 py-4 h-11 text-sm hover:scale-90 font-bold duration-500 ease-in-out"
           variant="outline"
+          onClick={() => router.push("/menu")}
         >
           View The Menu
         </Button>
