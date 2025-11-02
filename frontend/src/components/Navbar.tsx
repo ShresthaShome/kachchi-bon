@@ -9,7 +9,6 @@ import { useEffect, useRef, useState } from "react";
 export default function Navbar() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
-  const [lastScroll, setLastScroll] = useState(0);
   const [hideNav, setHideNav] = useState(false);
   const lastScrollRef = useRef(0);
 
@@ -31,10 +30,9 @@ export default function Navbar() {
         setHideNav(false);
       }
 
-      lastScrollRef.current = currentScroll; // ✅ update ref
+      lastScrollRef.current = currentScroll;
     };
 
-    // Check initial scroll
     handleScroll();
 
     window.addEventListener("scroll", handleScroll);
@@ -43,8 +41,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed mt-0 top-0 left-0 w-full z-500 transition-all duration-700 ${
-        !scrolled ? "bg-white/90 shadow-lg py-3" : "bg-white/50 py-5"
+      className={`fixed mt-0 top-0 left-0 w-full z-500 transition-all duration-700 border-red-600 border-x-8 py-3 ${
+        !scrolled ? "bg-white/90 shadow-lg border-t-8" : "bg-white/50"
       } ${
         hideNav ? "-translate-y-full md:translate-y-0" : "translate-y-0"
       } backdrop-blur-md flex flex-col lg:flex-row justify-around w-full min-h-30 gap-3 my-3 items-center`}
@@ -102,7 +100,7 @@ export default function Navbar() {
           Cart
         </Link>
         <Link
-          href="/auth"
+          href="/login"
           className="text-gray-800 hover:text-gray-900 flex gap-1 items-center justify-center"
         >
           <UserRound className="h-6 w-6 text-gray-700" />
