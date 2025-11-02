@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="border-red-600 border-8 pt-28 max-lg:pt-37">
+      <body className="border-red-600 border-8 pt-28 max-lg:pt-37 min-h-dvh flex flex-col justify-between">
         <Navbar />
         {children}
         <Footer />

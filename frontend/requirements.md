@@ -5,7 +5,7 @@
 3. [ ] About Us Page - Restaurant story, mission, chefs team section, awards, interior photos
 4. [ ] Contact Page - Contact form (Name, Email, Message), Google Map, address, phone, working hours
 5. [x] Cart Page - Order all item show(name, qty, price), update/remove options, subtotal/total
-6. [ ] Checkout Page - Billing info, delivery info, payment method (Stripe, PayPal demo)।
+6. [x] Checkout Page - Billing info, delivery info, payment method (Stripe, PayPal demo)।
 7. [ ] Order Status / My Orders Page - User তাদের Order track করতে পারবে (Pending / Processing / Delivered / Cancelled)
 8. [x] Login / Register Page - Customer login/register UI (demo authentication flow)।
 9. [x] User Profile Page - User info edit, saved addresses, order history, change password
