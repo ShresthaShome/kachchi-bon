@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Kacchi Restaurant",
+  title: "Kachchi Bon",
   description: "Made by Ullas Shome",
 };
 
