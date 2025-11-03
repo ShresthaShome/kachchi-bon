@@ -5,12 +5,12 @@ import { useParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
-const mockPosts = [
+export const mockPosts = [
   {
     id: "1",
-    title: "5 Must-Try Kacchi Recipes",
+    title: "5 Must-Try Kachchi Recipes",
     content:
-      "Kacchi biryani is one of the most aromatic and flavorful dishes from South Asia. In this post, we explore traditional techniques, spices, and regional variations...",
+      "Kachchi biryani is one of the most aromatic and flavorful dishes from Bangladesh. In this post, we explore traditional techniques, spices, and regional variations...",
     image: "/images/blogs/kachchi.jpg",
   },
   {
@@ -46,7 +46,7 @@ export default function page() {
   return (
     <main className="max-w-3xl mx-auto px-4 pt-4 pb-16">
       <Link href="/blogs" className="hover:underline block mb-4">
-        &larr;Go Back
+        &larr;Blogs
       </Link>
       <h1
         className={`text-4xl font-bold mb-6 text-rose-600 ${

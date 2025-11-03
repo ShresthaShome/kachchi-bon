@@ -7,8 +7,8 @@ import Image from "next/image";
 const posts = [
   {
     id: 1,
-    title: "5 Must-Try Kacchi Recipes",
-    snippet: "Learn how to make authentic Kacchi at home...",
+    title: "5 Must-Try Kachchi Recipes",
+    snippet: "Learn how to make authentic Kachchi at home...",
     image: "/images/blogs/kachchi.jpg",
   },
   {

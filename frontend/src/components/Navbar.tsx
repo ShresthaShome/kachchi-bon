@@ -3,7 +3,7 @@
 import { Handbag, Search, UserRound } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 export default function Navbar() {
@@ -11,6 +11,34 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [hideNav, setHideNav] = useState(false);
   const lastScrollRef = useRef(0);
+
+  const [query, setQuery] = useState("");
+  const router = useRouter();
+  const lastPathRef = useRef(pathname);
+
+  useEffect(() => {
+    if (pathname !== "/search") {
+      lastPathRef.current = pathname;
+      setQuery("");
+    }
+  }, [pathname]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const trimmed = query.trim();
+
+      if (trimmed === "") {
+        router.push(lastPathRef.current);
+      } else {
+        const target = `/search?q=${encodeURIComponent(trimmed)}`;
+        if (pathname !== target) {
+          router.push(target);
+        }
+      }
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, [query, pathname, router]);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -87,10 +115,12 @@ export default function Navbar() {
           <input
             type="text"
             placeholder="Search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
             className="rounded-3xl h-9 p-5 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none bg-gray-100"
           />
 
-          <Search className="absolute left-50 top-3 h-4 w-5 text-gray-800 " />
+          <Search className="absolute left-48 top-3 h-4 w-5 text-gray-800 " />
         </div>
         <Link
           href="/cart"

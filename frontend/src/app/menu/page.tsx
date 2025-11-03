@@ -7,10 +7,10 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Range, getTrackBackground } from "react-range";
 
-const foodItems = [
+export const foodItems = [
   {
     id: 1,
-    name: "Classic Kacchi",
+    name: "Classic Kachchi",
     category: "Lunch",
     price: 300,
     image: "/images/menu/classic-kachchi.jpg",
@@ -43,7 +43,6 @@ const foodItems = [
     price: 510,
     image: "/images/menu/choco-cake.jpeg",
   },
-  // Add more items...
 ];
 
 const categories = ["Breakfast", "Lunch", "Dinner", "Drinks", "Desserts"];
