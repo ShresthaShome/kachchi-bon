@@ -19,6 +19,7 @@
 17. [ ] FAQ Page - Common customer questions (Delivery time, payment, allergens)
 18. [ ] Gallery Page - Restaurant interior, dishes, events photo grid
 19. [ ] Team Page - Chefs and staff members (name, role, experience, social links)
-20. [ ] Testimonials Page - Customer feedback section
-21. [ ] Search Results Page - Dish or blog post search results
+20. [x] Testimonials Page - Customer feedback section
+21. [x] Search Results Page - Dish or blog post search results
 22. [x] 404 Error Page - Custom design for not found page
+23. [] Absolute integration and optimization (Like reachability to every page, logo, minor tweaks etc.)
