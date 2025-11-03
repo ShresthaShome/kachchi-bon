@@ -12,7 +12,7 @@
 10. \[x] Blog Page - Restaurant news, recipes, food tips
 11. \[x] Blog Details Page - Full post view with comments section
 12. \[ ] Privacy Policy Page - Legal \& data protection info
-13. \[ ] Terms \& Conditions Page - Ordering, refund, and usage rules
+13. \[x] Terms \& Conditions Page - Ordering, refund, and usage rules
 14. \[ ] Refund Policy Page - Refund and cancellation rules
 15. \[x] Reservation Page - Table booking form (date, time, guests, special request)
 16. \[x] Invoice Page (Order Summary) - Order confirmation page with invoice-style layout
