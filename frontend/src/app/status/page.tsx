@@ -132,7 +132,7 @@ const MOCK_ORDERS: Order[] = [
         name: "BBQ Dinner",
         qty: 1,
         price: 520,
-        image: "/images/menu/BBQ.png",
+        image: "/images/menu/BBQ.jpg",
       },
     ],
     subtotal: 520,

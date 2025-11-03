@@ -22,4 +22,4 @@
 20. \[x] Testimonials Page - Customer feedback section
 21. \[x] Search Results Page - Dish or blog post search results
 22. \[x] 404 Error Page - Custom design for not found page
-23. \[] Absolute integration and optimization (Like reachability to every page, logo, minor tweaks etc.)
+23. \[x] Absolute integration and optimization (Like reachability to every page, logo, minor tweaks etc.)

@@ -103,7 +103,7 @@ export default function Navbar() {
         <Link
           href="/blogs"
           className={`${
-            pathname === "/about" ? "text-black underline" : "text-red-500"
+            pathname === "/blogs" ? "text-black underline" : "text-red-500"
           } hover:text-black hover:underline decoration-2 decoration-red-500 underline-offset-6`}
         >
           Blogs

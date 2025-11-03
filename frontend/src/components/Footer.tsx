@@ -174,7 +174,7 @@ export default function Footer() {
         <Link
           href="/gallery"
           className={`${
-            pathname === "/about" ? "text-black underline" : "text-white"
+            pathname === "/gallery" ? "text-black underline" : "text-white"
           } hover:text-black hover:underline decoration-2 decoration-black underline-offset-6`}
         >
           Gallery
