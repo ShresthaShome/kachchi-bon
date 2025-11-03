@@ -67,7 +67,7 @@ export default function page() {
   };
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-gray-50 to-gray-100 py-12 px-4 sm:px-8 lg:px-20">
+    <main className="min-h-screen bg-linear-to-br from-gray-50 to-gray-100 py-12 px-4 sm:px-8 lg:px-20">
       <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl p-8 space-y-10">
         <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
           Your Profile
@@ -264,6 +264,6 @@ export default function page() {
           </button>
         </section>
       </div>
-    </div>
+    </main>
   );
 }

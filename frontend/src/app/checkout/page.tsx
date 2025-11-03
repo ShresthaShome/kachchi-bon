@@ -67,7 +67,7 @@ export default function page() {
   };
 
   return (
-    <section className="max-w-7xl mx-auto px-4 pb-16 pt-8">
+    <main className="max-w-7xl mx-auto px-4 pb-16 pt-8">
       <h1 className="text-4xl font-extrabold text-rose-600 mb-10 text-center">
         Checkout
       </h1>
@@ -229,6 +229,6 @@ export default function page() {
           </CardContent>
         </Card>
       </div>
-    </section>
+    </main>
   );
 }

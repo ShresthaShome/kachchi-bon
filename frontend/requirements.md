@@ -9,8 +9,8 @@
 7. [ ] Order Status / My Orders Page - User তাদের Order track করতে পারবে (Pending / Processing / Delivered / Cancelled)
 8. [x] Login / Register Page - Customer login/register UI (demo authentication flow)।
 9. [x] User Profile Page - User info edit, saved addresses, order history, change password
-10. [ ] Blog Page - Restaurant news, recipes, food tips
-11. [ ] Blog Details Page - Full post view with comments section
+10. [x] Blog Page - Restaurant news, recipes, food tips
+11. [x] Blog Details Page - Full post view with comments section
 12. [ ] Privacy Policy Page - Legal & data protection info
 13. [ ] Terms & Conditions Page - Ordering, refund, and usage rules
 14. [ ] Refund Policy Page - Refund and cancellation rules

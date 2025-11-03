@@ -69,7 +69,7 @@ export default function MenuPage() {
   );
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-16">
+    <main className="max-w-7xl mx-auto px-4 py-16">
       <h1 className="text-4xl font-extrabold text-center mb-8 text-rose-600">
         Our Feast Menu
       </h1>
@@ -175,6 +175,6 @@ export default function MenuPage() {
           ))}
         </div>
       </div>
-    </section>
+    </main>
   );
 }
