@@ -15,7 +15,7 @@
 13. [ ] Terms & Conditions Page - Ordering, refund, and usage rules
 14. [ ] Refund Policy Page - Refund and cancellation rules
 15. [x] Reservation Page - Table booking form (date, time, guests, special request)
-16. [ ] Invoice Page (Order Summary) - Order confirmation page with invoice-style layout
+16. [x] Invoice Page (Order Summary) - Order confirmation page with invoice-style layout
 17. [ ] FAQ Page - Common customer questions (Delivery time, payment, allergens)
 18. [ ] Gallery Page - Restaurant interior, dishes, events photo grid
 19. [ ] Team Page - Chefs and staff members (name, role, experience, social links)
