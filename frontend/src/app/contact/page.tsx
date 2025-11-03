@@ -1,5 +1,6 @@
 "use client";
 
+import { Hourglass, MapPinHouse, PhoneCall } from "lucide-react";
 import { type ChangeEvent, type FormEvent, useState } from "react";
 
 export default function page() {
@@ -29,28 +30,35 @@ export default function page() {
 
           <div className="space-y-4">
             <div>
-              <h3 className="text-lg font-semibold text-gray-800">
-                📍 Address
+              <h3 className="text-lg font-semibold text-gray-800 flex gap-2">
+                {" "}
+                <MapPinHouse /> Address
               </h3>
               <p className="text-gray-600">
                 123 Food Street, Dhaka 1205, Bangladesh
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-800">📞 Phone</h3>
+              <h3 className="text-lg font-semibold text-gray-800 flex gap-2">
+                <PhoneCall /> Phone
+              </h3>
               <p className="text-gray-600">+880 1777-123456</p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-800">
-                🕓 Working Hours
+              <h3 className="text-lg font-semibold text-gray-800 flex gap-2">
+                <Hourglass /> Working Hours
               </h3>
               <p className="text-gray-600">Everyday: 10:00 AM - 11:00 PM</p>
             </div>
           </div>
 
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+            Our Location
+          </h2>
+
           <div className="w-full h-64 rounded-lg overflow-hidden shadow">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.457183955734!2d90.3925!3d23.8041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c71c9d2b9f15%3A0xa72b45d6c55e69e7!2sDhaka!5e0!3m2!1sen!2sbd!4v1709222222222!5m2!1sen!2sbd"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d556.646324903888!2d89.89208880950744!3d24.23996247724763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fdfba9ee19bb87%3A0x5e717d4d2273d19a!2sSheikh%20Russel%20Hall%2C%20MBSTU!5e0!3m2!1sen!2sbd!4v1762166043233!5m2!1sen!2sbd"
               width="100%"
               height="100%"
               allowFullScreen
@@ -65,7 +73,7 @@ export default function page() {
           className="bg-white rounded-2xl shadow-lg p-8 space-y-6"
         >
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-            Send a Message
+            Leave a Message
           </h2>
 
           <div>
