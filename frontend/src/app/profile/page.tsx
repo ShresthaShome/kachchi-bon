@@ -1,6 +1,7 @@
 "use client";
 import { Separator } from "@/components/ui/separator";
 import { Camera } from "lucide-react";
+import Link from "next/link";
 import { useState, useRef } from "react";
 
 export default function page() {
@@ -219,7 +220,13 @@ export default function page() {
                           : "text-yellow-600"
                       }`}
                     >
-                      {order.status}
+                      <Link
+                        href="/status"
+                        className="hover:cursor-pointer hover:underline"
+                      >
+                        {" "}
+                        {order.status}
+                      </Link>
                     </td>
                   </tr>
                 ))}

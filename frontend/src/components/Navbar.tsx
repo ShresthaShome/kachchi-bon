@@ -100,15 +100,17 @@ export default function Navbar() {
         >
           Our Story
         </Link>
+        <Link
+          href="/blogs"
+          className={`${
+            pathname === "/about" ? "text-black underline" : "text-red-500"
+          } hover:text-black hover:underline decoration-2 decoration-red-500 underline-offset-6`}
+        >
+          Blogs
+        </Link>
       </div>
       <Link href="/">
-        <Image
-          src={"https://placehold.co/165x45"}
-          alt="logo"
-          width={165}
-          height={45}
-          unoptimized
-        />
+        <Image src="/logo.png" alt="logo" width={165} height={45} unoptimized />
       </Link>
       <div className="flex max-lg:justify-center max-md:w-full w-1/4 justify-evenly items-center gap-10">
         <div className="relative max-w-sm">

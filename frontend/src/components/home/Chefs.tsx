@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ChefSection() {
   const chefs = [
@@ -27,9 +28,11 @@ export default function ChefSection() {
 
   return (
     <section className="w-full py-16 bg-gray-50 flex flex-col items-center text-center">
-      <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
-        Meet Our Chefs
-      </h2>
+      <Link href="/team" className="hover:cursor-pointer hover:underline">
+        <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
+          Meet Our Chefs
+        </h2>
+      </Link>
       <p className="text-gray-600 max-w-2xl mb-12">
         Our talented chefs blend tradition and creativity to bring you
         unforgettable dishes.

@@ -63,7 +63,7 @@ export default function page() {
       }`
     );
 
-    if (ordered) router.push("/");
+    if (ordered) router.push("/invoice");
   };
 
   return (

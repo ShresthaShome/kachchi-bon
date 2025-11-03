@@ -9,6 +9,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function TestimonialsSection() {
   const testimonials = [
@@ -46,9 +47,14 @@ export default function TestimonialsSection() {
 
   return (
     <section className="relative py-20 bg-linear-to-b from-pink-100 to-white text-center overflow-hidden">
-      <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-        What Our Customers Say
-      </h2>
+      <Link
+        href="/testimonials"
+        className="hover:cursor-pointer hover:underline"
+      >
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+          What Our Customers Say
+        </h2>
+      </Link>
       <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
         Real stories from real food lovers — because great taste deserves great
         words.

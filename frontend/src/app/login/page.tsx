@@ -13,7 +13,7 @@ export default function page() {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     alert(`Logging in as ${email}`);
-    router.push("/");
+    router.push("/profile");
   };
 
   return (

@@ -29,7 +29,7 @@ export default function page() {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     alert(`Signing up as ${form.email}`);
-    router.push("/");
+    router.push("/profile");
   };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
