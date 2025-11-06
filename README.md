@@ -14,14 +14,14 @@ A fully responsive restaurant web application built with **Next.js 15**, **TypeS
 
 
 
-- [Features](features)  
-- [Tech Stack](tech-stack)  
-- [Project Structure](project-structure)  
-- [Pages](pages)  
-- [deployment](deployment)  
-- [Installation](installation)  
-- [Usage](usage)  
-- [License](license)
+- [Features](#features)  
+- [Tech Stack](#tech-stack)  
+- [Project Structure](#project-structure)  
+- [Pages](#pages)  
+- [deployment](#deployment)  
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [License](#license)
 
 
 
